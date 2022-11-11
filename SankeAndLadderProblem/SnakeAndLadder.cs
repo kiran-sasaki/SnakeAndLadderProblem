@@ -12,6 +12,9 @@ namespace SnakeAndLadderProblem
         {
             int StartPosition = 0;
             Console.WriteLine("Started with " + StartPosition + " position");
+            Random Dice = new Random();
+            int diceRoll = Dice.Next(1, 7);
+            Console.WriteLine("Dice Roll " + diceRoll);
         }
     }
 }
