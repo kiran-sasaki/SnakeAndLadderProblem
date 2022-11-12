@@ -17,9 +17,11 @@ namespace SnakeAndLadderProblem
             int StartPosition = 0;
             int PlayerPosition =0;
             Console.WriteLine("Started with " + StartPosition + " position");
+            //UC2
             Random Dice = new Random();
             int diceRoll = Dice.Next(1, 7);
             Console.WriteLine("Dice Roll " + diceRoll);
+            //UC3
             int option = Dice.Next(0, 3);
             switch (option)
             {
