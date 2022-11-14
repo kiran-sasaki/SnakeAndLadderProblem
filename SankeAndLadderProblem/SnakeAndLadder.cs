@@ -32,6 +32,11 @@ namespace SnakeAndLadderProblem
                         break;
                     case 1:
                         PlayerPosition += diceRoll;
+                        if (PlayerPosition > WINPOSITION)
+                        {
+                            PlayerPosition -= diceRoll;
+                            Console.WriteLine("Stay in some previous position " + PlayerPosition);
+                        }
                         Console.WriteLine("You Got Ladder");
                         Console.WriteLine("Your Position After Ladder is : " + PlayerPosition);
                         break;
