@@ -15,6 +15,7 @@ namespace SnakeAndLadderProblem
         public static void SnakeAndLadderGame()
         {
             int PlayerPosition =0;
+            int DieCount = 0;
             //UC4
             while (PlayerPosition < WINPOSITION)
             {
@@ -53,8 +54,11 @@ namespace SnakeAndLadderProblem
                         Console.WriteLine("You Got Snake");
                         Console.WriteLine("Your Position After Snake is : " + PlayerPosition);
                         break;
+                        DieCount++;
                 }
+                DieCount++;
             }
+            Console.WriteLine("The Number of times Dice Rolled is " + DieCount);
         }
     }
 }
