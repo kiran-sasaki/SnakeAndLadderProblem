@@ -56,8 +56,10 @@ namespace SnakeAndLadderProblem
                         break;
                         DieCount++;
                 }
+                //UC6
                 DieCount++;
             }
+            //UC6
             Console.WriteLine("The Number of times Dice Rolled is " + DieCount);
         }
     }
